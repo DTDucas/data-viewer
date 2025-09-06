@@ -27,16 +27,13 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-
       - name: Install dependencies
         run: npm ci
 
       - name: Build with Next.js
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /data-viewer
 
       - name: List build output
         run: ls -la out/
