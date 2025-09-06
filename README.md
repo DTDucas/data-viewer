@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JSON Data Viewer
 
-## Getting Started
+A powerful, real-time JSON data viewer with tree visualization and formatted display. Built with Next.js, React, and TypeScript.
 
-First, run the development server:
+## 🚀 Features
+
+- **Real-time JSON Processing**: Instant parsing and validation as you type or paste
+- **Dual View Modes**:
+  - Tree View with collapsible folders and item counts
+  - Formatted JSON view with syntax highlighting
+- **Interactive Tree Navigation**:
+  - Click to expand/collapse JSON objects and arrays
+  - Visual hierarchy with proper indentation
+  - Item count display for arrays and objects
+  - Color-coded data types
+- **Dark Theme**: Optimized dark interface for comfortable viewing
+- **Resizable Panels**: Adjust input/output panel sizes to your preference
+- **Error Handling**: Clear error messages for invalid JSON
+- **Copy Functionality**: One-click copy of formatted JSON
+- **Responsive Design**: Works on desktop and mobile devices
+
+## 🎯 Live Demo
+
+Visit the live application: [JSON Data Viewer](https://dtducas.github.io/data-viewer/)
+
+## 🛠️ Technologies Used
+
+- **Next.js 15** - React framework with static export
+- **React 19** - UI library with modern hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **React Resizable Panels** - Interactive panel resizing
+
+## 🏃‍♂️ Local Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/DTDucas/data-viewer.git
+cd data-viewer
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+This creates an optimized static export in the `out` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## 📖 Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Input JSON**: Paste or type your JSON data in the left panel
+2. **Real-time Validation**: See instant feedback on JSON validity
+3. **Choose View Mode**: Switch between Tree View and Formatted view
+4. **Navigate Data**:
+   - In Tree View: Click arrows to expand/collapse objects and arrays
+   - Use "Expand All" / "Collapse All" buttons for bulk operations
+5. **Copy Results**: Click the copy button to copy formatted JSON
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Tree View Features
 
-## Deploy on Vercel
+- **Color-coded Types**:
+  - 🟢 Strings (emerald)
+  - 🔵 Numbers (blue)
+  - 🟣 Booleans (purple)
+  - ⚫ Null values (gray)
+  - 🟠 Arrays (orange)
+  - 🔴 Objects (rose)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Interactive Elements**:
+  - Expandable/collapsible nodes
+  - Item count indicators
+  - Hover effects
+  - Smooth animations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Setup GitHub Pages Deployment
+
+1. Push your code to GitHub
+2. Go to repository Settings → Pages
+3. Set Source to "GitHub Actions"
+4. The workflow will automatically deploy on push to main branch
+
+## 👨‍💻 Author
+
+**Duong Tran Quang (DTDucas)**
+
+- Email: <baymax.contact@gmail.com>
+- GitHub: [@DTDucas](https://github.com/DTDucas)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/DTDucas/data-viewer/issues).
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if this project helped you!
